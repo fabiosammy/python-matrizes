@@ -7,7 +7,7 @@
 
 #### Tempo serializado:
 ```bash
-$ time python main.py 
+$ time python main.py
 Fri Apr 26 18:31:06 2019: Gerando matrizes
 Fri Apr 26 18:31:07 2019: Multiplicando matrizes
 Fri Apr 26 18:31:13 2019: Resultado:[[11509. 11596. 12327. ... 11595. 12090. 11616.]
@@ -25,6 +25,20 @@ sys	0m0.225s
 
 #### Tempo utilizando threads:
 ```bash
+$ time python main.py
+Fri Apr 26 19:01:22 2019: Gerando matrizes
+Fri Apr 26 19:01:22 2019: Multiplicando matrizes
+Fri Apr 26 19:01:25 2019: Resultado:[[12003. 11530. 11722. ... 12261. 12283. 12099.]
+ [11526. 11024. 11295. ... 11272. 11998. 11354.]
+ [11655. 11439. 11379. ... 11789. 12412. 12252.]
+ ...
+ [    0.     0.     0. ...     0.     0.     0.]
+ [    0.     0.     0. ...     0.     0.     0.]
+ [    0.     0.     0. ...     0.     0.     0.]]
+
+real	0m3.435s
+user	0m3.775s
+sys	0m2.516s
 ```
 
 #### Tempo utilizando multiprocessos:
