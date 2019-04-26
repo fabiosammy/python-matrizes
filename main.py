@@ -3,6 +3,8 @@
 
 import numpy
 import random
+import time
+import logging
 
 def cria_matriz(linhas, colunas):
   A = []
@@ -22,12 +24,14 @@ def multiplica_linha_coluna(matrizA, matrizB, i, j):
 if __name__ == '__main__':
     linhas, colunas = 400, 400
 
+    print("{}: Gerando matrizes".format(time.strftime('%c')))
     matrizA = cria_matriz(linhas, colunas)
     matrizB = cria_matriz(linhas, colunas)
     matrizC = numpy.zeros(shape=(linhas,colunas))
 
+    print("{}: Multiplicando matrizes".format(time.strftime('%c')))
     for i in range(len(matrizA)):
         for j in range(len(matrizA[0])):
             matrizC[i][j] = multiplica_linha_coluna(matrizA, matrizB, i, j)
 
-    print("Resultado:{}".format(matrizC))
+    print("{}: Resultado:{}".format(time.strftime('%c'), matrizC))
