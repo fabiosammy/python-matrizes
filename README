@@ -1,0 +1,30 @@
+## Projeto de multiplicação de matrizes em python
+
+* Este é um projeto simples de multiplicação de matrizes em python para aprender o paralelismo;
+* Verifique os commits para saber mais sobre;
+* O padrão é uma matriz 400x400;
+* Em qualquer dúvida, abra uma issue;
+
+#### Tempo serializado:
+```bash
+$ time python main.py 
+Resultado:[[11817. 12170. 11144. ... 11377. 11289. 11994.]
+ [12294. 12374. 11668. ... 11756. 11684. 12348.]
+ [12193. 11988. 11768. ... 11415. 11706. 12421.]
+ ...
+ [11459. 11831. 11464. ... 11429. 11091. 11830.]
+ [12040. 11759. 11151. ... 11495. 11738. 12280.]
+ [11608. 11648. 11157. ... 11285. 11471. 11846.]]
+
+real	0m12.184s
+user	0m12.222s
+sys	0m0.178s
+```
+
+#### Tempo utilizando threads:
+```bash
+```
+
+#### Tempo utilizando multiprocessos:
+```
+```
